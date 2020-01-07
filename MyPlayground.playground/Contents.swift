@@ -7,8 +7,10 @@ import UIKit
 // Your function here
 func double(_ x: Double) -> Double {
     let result = x * 2.0
+
     return result
 }
+double(8.0)
 
 let testCasesOne: [(Double, Double)] = [
     (input: 3.0, expectedOutput: 6.0),
@@ -35,8 +37,9 @@ func smallest(of dub1:Double ,and dub2:Double) -> Double {
     } else {
         return dub2
     }
-    
 }
+smallest(of: 9.0, and: 4.4)
+
 let testCasesTwo: [(Double, Double, Double)] = [
     (inputOne: 8.0, inputTwo: 3.0, expectedOutput: 3.0),
     (inputOne: 0, inputTwo: 0, expectedOutput: 0),
@@ -63,6 +66,8 @@ func smallestValue(in arr: [Double]) -> Double {
     }
     return smaller
 }
+smallestValue(in: [5, 23, 343, 44, 91])
+
 let testCasesThree: [([Double], Double)] = [
     (input: [1.0,2,3,4,5,5], expectedOutput: 1.0),
     (input: [6,5,4,3,2,1], expectedOutput: 1),
@@ -90,6 +95,7 @@ func occurrances(of char: Character, in str: String) -> Int {
     }
     return counter
 }
+occurrances(of: "l", in: "hello")
 let testCasesFour: [(Character, String, Int)] = [
     (inputOne: "l", inputTwo: "hello", expectedOutput: 2),
     (inputOne: "r", inputTwo: "hello world!", expectedOutput: 1),
@@ -118,6 +124,8 @@ func removeNils(from numArray: [Int?]) -> [Int] {
     }
     return arrayWONil
 }
+
+removeNils(from: [9, nil, 0, 78, nil])
 
 let testCasesFive: [([Int?], [Int])] = [
     (input: [1, nil, 9, nil, 10, nil], expectedOutput: [1,9,10]),
